@@ -1,0 +1,35 @@
+header.navigation[role="banner"]
+  .navigation-wrapper
+    a#js-mobile-menu.navigation-menu-button[href="javascript:void(0)"]
+      | MENU
+    nav[role="navigation"]
+      ul#js-navigation-menu.navigation-menu.show
+        li.nav-link
+          a[href="javascript:void(0)"]
+            | About Us
+        li.nav-link
+          a[href="javascript:void(0)"]
+            | Contact
+        - if current_user
+          li.nav-link
+            = link_to "Member Directory", Rails.application.routes.url_helpers.members_path
+          li.nav-link
+            = link_to "News", "/news"
+          li.nav-link
+            = link_to "Forums", "/forums"
+          - if current_user.admin?
+            li.nav-link
+              = link_to "Admin", "/admin"
+    .navigation-tools
+      - if current_user
+        ul.navigation-menu
+          li.nav-link.more
+            a Hello, #{current_user.first_name}
+            ul.submenu
+              li
+                = link_to "Profile", Rails.application.routes.url_helpers.user_path(current_user)
+              li
+                = link_to "Log Out", Rails.application.routes.url_helpers.destroy_user_session_path, method: :delete
+      - else
+        = link_to "Log In", Rails.application.routes.url_helpers.new_user_session_path, class: 'sign-in'
+

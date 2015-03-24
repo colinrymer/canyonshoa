@@ -1,8 +1,16 @@
 class ApplicationController < ActionController::Base
+  before_filter :configure_permitted_parameters, if: :devise_controller?
+
+  def configure_permitted_parameters
+    devise_parameter_sanitizer.for(:account_update) do |u|
+      u.permit(:password, :password_confirmation, :current_password)
+    end
+  end
 
   def forem_user
     current_user
   end
+
   helper_method :forem_user
 
   # Prevent CSRF attacks by raising an exception.

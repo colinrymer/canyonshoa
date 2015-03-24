@@ -17,6 +17,22 @@ class User < ActiveRecord::Base
   end
 
   def forem_name
-    email
+    full_name
+  end
+
+  def full_name
+    "#{first_name} #{last_name}"
+  end
+
+  def first_name
+    "Colin"
+  end
+
+  def last_name
+    "Rymer"
+  end
+
+  def address
+    "123 somewhere"
   end
 end

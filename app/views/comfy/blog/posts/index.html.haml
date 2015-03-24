@@ -1,0 +1,13 @@
+- @posts.each do |post|
+
+  %h1= link_to post.title, comfy_blog_post_path(@cms_site.path, @blog.path, post.slug)
+  .author
+    = post.author
+  .date
+    = post.published_at.to_s(:db)
+  .content
+    = post.excerpt.html_safe
+  - unless post == @posts.last
+    %hr
+
+= comfy_paginate @posts

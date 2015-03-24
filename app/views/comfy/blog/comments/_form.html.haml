@@ -1,0 +1,13 @@
+%fieldset
+  %h3 New Comment
+  = simple_form_for @comment, :as => :comment, :url => comfy_blog_comments_path(@cms_site.path, @blog.path, @post.slug) do |form|
+    
+    -# don't need this when installed into your app
+    = form.hidden_field :authenticity_token, :value => form_authenticity_token
+    
+    = form.hidden_field :author, value: current_user.full_name
+    = form.hidden_field :email, value: current_user.email
+    = form.text_area :content, label: false
+    %p
+      = "- #{current_user.full_name}"
+    = form.submit 'Submit'

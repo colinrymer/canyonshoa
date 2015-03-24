@@ -8,6 +8,9 @@
 @import "refills/flashes";
 @import "refills/footer";
 @import "refills/tables";
+@import "refills/navigation";
+@import "refills/comment";
+@import "refills/type-system-slab";
 
 div.container {
   @include outer-container;

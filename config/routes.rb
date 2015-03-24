@@ -2,21 +2,21 @@ Rails.application.routes.draw do
 
   root to: "comfy/cms/content#show"
 
-  #if Rails.env.production?
-    devise_for :admins, controllers: { registrations: "admin_registrations" }
-  #else
-    #devise_for :admins
-  #end
+  resources :members, only: [:index]
+  resources :users, only: [:show, :edit, :update]
 
+  devise_for :admins, controllers: { registrations: "admin_registrations" }
   devise_for :users
 
   mount RailsAdmin::Engine => '/canyons-admin', as: 'rails_admin'
-  mount Forem::Engine, :at => '/forums'
+  mount Forem::Engine, at: '/forums'
 
-  comfy_route :cms_admin, :path => '/admin'
+  comfy_route :blog, path: '/news'
+  comfy_route :blog_admin, path: '/admin'
+  comfy_route :cms_admin, path: '/admin'
 
   # Make sure this routeset is defined last
-  comfy_route :cms, :path => '/', :sitemap => false
+  comfy_route :cms, path: '/', sitemap: false
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,4 +1,5 @@
 # encoding: utf-8
+
 module CmsDeviseAuth
   def authenticate
     unless current_user && current_user.admin?
