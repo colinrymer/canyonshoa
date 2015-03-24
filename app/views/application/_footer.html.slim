@@ -32,11 +32,9 @@ footer.footer[role="contentinfo"]
         h3
           | Legal
       li
-        a[href="javascript:void(0)"]
-          | Terms and Conditions
+        = link_to "Terms and Conditions", page_path('terms')
       li
-        a[href="javascript:void(0)"]
-          | Privacy Policy
+        = link_to "Privacy Policy", page_path('privacy')
   hr
   p
     | The Canyons at Falling Water. &copy; 2015

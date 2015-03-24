@@ -1,16 +1,24 @@
 Rails.application.routes.draw do
 
   root to: "comfy/cms/content#show"
+  get 'privacy' => 'high_voltage/pages#show', id: 'privacy'
+  get 'terms' => 'high_voltage/pages#show', id: 'terms'
 
-  resources :members, only: [:index]
-  resources :users, only: [:show, :edit, :update]
+  get 'members', to: "users#index"
+
+
+  resources :users, only: [:index, :show, :edit, :update] do
+    put 'approve', on: :member
+  end
 
   devise_for :admins, controllers: { registrations: "admin_registrations" }
-  devise_for :users, :skip => [:sessions]
+  devise_for :users, skip: [:sessions, :registrations]
   as :user do
-    get 'signin' => 'devise/sessions#new', :as => :new_user_session
-    post 'signin' => 'devise/sessions#create', :as => :user_session
-    delete 'signout' => 'devise/sessions#destroy', :as => :destroy_user_session
+    get 'signup' => 'devise/registrations#new', as: :new_user_registration
+    post 'signup' => 'devise/registrations#new', as: :user_registration
+    get 'signin' => 'devise/sessions#new', as: :new_user_session
+    post 'signin' => 'devise/sessions#create', as: :user_session
+    delete 'signout' => 'devise/sessions#destroy', as: :destroy_user_session
   end
 
   mount RailsAdmin::Engine => '/canyons-admin', as: 'rails_admin'

@@ -1,0 +1,22 @@
+- if current_user.admin?
+  - if @waiting_approval
+    = link_to "All Users", :action => "index"
+  - else
+    = link_to "Users awaiting approval", :action => "index", :approved => "false"
+table.tables
+  thead
+    tr
+      th Name
+      th Email
+      th Address
+      - if current_user.admin? && @waiting_approval
+        th Approve
+  tbody
+    - @users.each do |user|
+      tr
+        td = user.full_name
+        td = user.email
+        td = user.address
+        - if current_user.admin? && @waiting_approval
+          td
+            = link_to "Approve", approve_user_path(user.id), method: :put
