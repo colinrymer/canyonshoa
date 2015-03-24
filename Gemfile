@@ -7,8 +7,6 @@ gem 'forem', github: 'colinrymer/forem', branch: 'patch-1'
 
 gem 'puma'
 
-gem 'sqlite3'
-
 gem 'bitters'
 gem 'bourbon'
 gem 'coffee-rails', '~> 4.1.0'
@@ -31,12 +29,14 @@ gem 'will_paginate'
 
 group :production do
   gem 'rails_12factor'
+  gem 'pg'
 end
 
 group :development, :test do
   gem 'quiet_assets'
   gem 'byebug'
   gem 'spring'
+  gem 'sqlite3'
   gem 'web-console', '~> 2.0'
 end
 
