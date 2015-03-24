@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    meta[charset="utf-8"]
+    meta[name="ROBOTS" content="NOODP"]
+    meta[name="viewport" content="initial-scale=1"]
+    title
+      | Canyons
+    == stylesheet_link_tag :application, media: "all"
+    == csrf_meta_tags
+  body
+    .container
+      == render "flashes"
+      == yield
+      == render "footer"
+      == render "javascript"
