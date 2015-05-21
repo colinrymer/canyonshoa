@@ -5,11 +5,9 @@ header.navigation[role="banner"]
     nav[role="navigation"]
       ul#js-navigation-menu.navigation-menu.show
         li.nav-link
-          a[href="javascript:void(0)"]
-            | About Us
+          = link_to "About Us", "/about"
         li.nav-link
-          a[href="javascript:void(0)"]
-            | Contact
+          = link_to "Contact", "/contact"
         - if current_user
           li.nav-link
             = link_to "Member Directory", Rails.application.routes.url_helpers.members_path
