@@ -9,6 +9,7 @@ gem 'forem', github: 'radar/forem', branch: 'rails4'
 
 gem 'puma'
 
+gem 'aws-sdk', '~> 1.6'
 gem 'bitters'
 gem 'bourbon'
 gem 'coffee-rails'
