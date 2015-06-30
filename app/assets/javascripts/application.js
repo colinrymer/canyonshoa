@@ -13,10 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
 //= require forem
 //= require refills/navigation
 //= require select2
+//= require_tree .
 
 $(function (){
   $('#user_lot_id').select2({
