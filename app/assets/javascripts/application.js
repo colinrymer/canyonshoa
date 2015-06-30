@@ -16,4 +16,12 @@
 //= require_tree .
 //= require forem
 //= require refills/navigation
+//= require select2
 
+$(function (){
+  $('#user_lot_id').select2({
+    placeholder: "Pick your mailing address",
+    allowClear: true,
+    width: 'element'
+  });
+});

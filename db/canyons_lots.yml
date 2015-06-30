@@ -1,0 +1,592 @@
+---
+- :street:
+  :number: 536
+  :lot: 71
+- :street:
+  :number: 537
+  :lot: 70
+- :street: Blue Canyon
+  :number: 551
+  :lot: 169
+- :street: Blue Canyon
+  :number: 575
+  :lot: 170
+- :street: Blue Canyon
+  :number: 576
+  :lot: 172
+- :street: Blue Canyon
+  :number: 598
+  :lot: 171
+- :street: Canyon Edge
+  :number: 515
+  :lot: 197
+- :street: Canyon Edge
+  :number: 516
+  :lot: 91
+- :street: Canyon Edge
+  :number: 528
+  :lot: 92
+- :street: Canyon Edge
+  :number: 529
+  :lot: 198
+- :street: Canyon Edge
+  :number: 536
+  :lot: 93
+- :street: Canyon Edge
+  :number: 542
+  :lot: 94
+- :street: Canyon Edge
+  :number: 543
+  :lot: 178
+- :street: Canyon Edge
+  :number: 548
+  :lot: 95
+- :street: Canyon Edge
+  :number: 556
+  :lot: 96
+- :street: Canyon Edge
+  :number: 568
+  :lot: 97
+- :street: Canyon Edge
+  :number: 576
+  :lot: 98
+- :street: Canyon Edge
+  :number: 584
+  :lot: 99
+- :street: Canyon Springs
+  :number: 525
+  :lot: 89
+- :street: Canyon Springs
+  :number: 539
+  :lot: 88
+- :street: Canyon Springs
+  :number: 553
+  :lot: 87
+- :street: Canyon Springs
+  :number: 568
+  :lot: 149
+- :street: Canyon Springs
+  :number: 581
+  :lot: 86
+- :street: Canyon Springs
+  :number: 594
+  :lot: 23
+- :street: Canyon Springs
+  :number: 595
+  :lot: 24
+- :street: Clear Canyon
+  :number: 402
+  :lot: 143
+- :street: Clear Canyon
+  :number: 410
+  :lot: 142
+- :street: Clear Canyon
+  :number: 411
+  :lot: 144
+- :street: Clear Canyon
+  :number: 429
+  :lot: 145
+- :street: Clear Canyon
+  :number: 432
+  :lot: 141
+- :street: Clear Canyon
+  :number: 447
+  :lot: 146
+- :street: Clear Canyon
+  :number: 454
+  :lot: 140
+- :street: Clear Canyon
+  :number: 465
+  :lot: 147
+- :street: Clear Canyon
+  :number: 480
+  :lot: 139
+- :street: Clear Canyon
+  :number: 483
+  :lot: 148
+- :street: Clear Canyon
+  :number: 508
+  :lot: 138
+- :street: Clear Canyon
+  :number: 563
+  :lot: 90
+- :street: Clear Canyon
+  :number: 588
+  :lot: 137
+- :street: Clear Canyon
+  :number: 596
+  :lot: 136
+- :street: Clear Canyon
+  :number: 606
+  :lot: 135
+- :street: Clear Canyon
+  :number: 614
+  :lot: 134
+- :street: Clear Canyon
+  :number: 619
+  :lot: 196
+- :street: Clear Canyon
+  :number: 624
+  :lot: 133
+- :street: Clear Canyon
+  :number: 627
+  :lot: 195
+- :street: Clear Canyon
+  :number: 631
+  :lot: 194
+- :street: Clear Canyon
+  :number: 632
+  :lot: 132
+- :street: Clear Canyon
+  :number: 637
+  :lot: 193
+- :street: Clear Canyon
+  :number: 643
+  :lot: 192
+- :street: Clear Canyon
+  :number: 644
+  :lot: 131
+- :street: Clear Canyon
+  :number: 660
+  :lot: 130
+- :street: Clear Canyon
+  :number: 665
+  :lot: 191
+- :street: Clear Canyon
+  :number: 668
+  :lot: 129
+- :street: Clear Canyon
+  :number: 676
+  :lot: 128
+- :street: Clear Canyon
+  :number: 677
+  :lot: 190
+- :street: Clear Canyon
+  :number: 688
+  :lot: 127
+- :street: Clear Canyon
+  :number: 691
+  :lot: 189
+- :street: Deep Canyon
+  :number: 6148
+  :lot: 32
+- :street: Deep Canyon
+  :number: 6162
+  :lot: 33
+- :street: Deep Canyon
+  :number: 6163
+  :lot: 31
+- :street: Deep Canyon
+  :number: 6176
+  :lot: 34
+- :street: Deep Canyon
+  :number: 6176
+  :lot: 34
+- :street: Deep Canyon
+  :number: 6177
+  :lot: 30
+- :street: Deep Canyon
+  :number: 6190
+  :lot: 35
+- :street: Deep Canyon
+  :number: 6191
+  :lot: 29
+- :street: Deep Canyon
+  :number: 6204
+  :lot: 36
+- :street: Deep Canyon
+  :number: 6205
+  :lot: 28
+- :street: Deep Canyon
+  :number: 6218
+  :lot: 37
+- :street: Deep Canyon
+  :number: 6219
+  :lot: 27
+- :street: Deep Canyon
+  :number: 6232
+  :lot: 38
+- :street: Deep Canyon
+  :number: 6233
+  :lot: 25
+- :street: Deep Canyon
+  :number: 6247
+  :lot: 24
+- :street: Deep Canyon
+  :number: 6275
+  :lot: 22
+- :street: Deep Canyon
+  :number: 6276
+  :lot: 40
+- :street: Deep Canyon
+  :number: 6289
+  :lot: 21
+- :street: Deep Canyon
+  :number: 6303
+  :lot: 20
+- :street: Deep Canyon
+  :number: 6306
+  :lot: 56
+- :street: Deep Canyon
+  :number: 6311
+  :lot: 19
+- :street: Deep Canyon
+  :number: 6318
+  :lot: 57
+- :street: Deep Canyon
+  :number: 6319
+  :lot: 18
+- :street: Deep Canyon
+  :number: 6327
+  :lot: 17
+- :street: Deep Canyon
+  :number: 6338
+  :lot: 58
+- :street: Deep Canyon
+  :number: 6339
+  :lot: 16
+- :street: Deep Canyon
+  :number: 6347
+  :lot: 15
+- :street: Deep Canyon
+  :number: 6348
+  :lot: 59
+- :street: Deep Canyon
+  :number: 6353
+  :lot: 14
+- :street: Deep Canyon
+  :number: 6354
+  :lot: 60
+- :street: Deep Canyon
+  :number: 6365
+  :lot: 13
+- :street: Deep Canyon
+  :number: 6366
+  :lot: 61
+- :street: Deep Canyon
+  :number: 6379
+  :lot: 12
+- :street: Deep Canyon
+  :number: 6380
+  :lot: 62
+- :street: Deep Canyon
+  :number: 6384
+  :lot: 63
+- :street: Deep Canyon
+  :number: 6387
+  :lot: 11
+- :street: Deep Canyon
+  :number: 6392
+  :lot: 64
+- :street: Deep Canyon
+  :number: 6393
+  :lot: 10
+- :street: Deep Canyon
+  :number: 6444
+  :lot: 65
+- :street: Deep Canyon
+  :number: 6447
+  :lot: 1
+- :street: Deep Canyon
+  :number: 6456
+  :lot: 66
+- :street: Deep Canyon
+  :number: 6463
+  :lot: 85
+- :street: Deep Canyon
+  :number: 6464
+  :lot: 67
+- :street: Deep Canyon
+  :number: 6477
+  :lot: 84
+- :street: Deep Canyon
+  :number: 6478
+  :lot: 68
+- :street: Deep Canyon
+  :number: 6488
+  :lot: 69
+- :street: Deep Canyon
+  :number: 6489
+  :lot: 83
+- :street: Deep Canyon
+  :number: 6531
+  :lot: 82
+- :street: Deep Canyon
+  :number: 6532
+  :lot: 72
+- :street: Deep Canyon
+  :number: 6547
+  :lot: 81
+- :street: Deep Canyon
+  :number: 6548
+  :lot: 73
+- :street: Deep Canyon
+  :number: 6563
+  :lot: 80
+- :street: Deep Canyon
+  :number: 6564
+  :lot: 74
+- :street: Deep Canyon
+  :number: 6572
+  :lot: 75
+- :street: Deep Canyon
+  :number: 6575
+  :lot: 79
+- :street: Deep Canyon
+  :number: 6580
+  :lot: 76
+- :street: Deep Canyon
+  :number: 6588
+  :lot: 77
+- :street: Deep Canyon
+  :number: 6589
+  :lot: 78
+- :street: Deer Valley
+  :number: 627
+  :lot: 126
+- :street: Deer Valley
+  :number: 643
+  :lot: 125
+- :street: Deer Valley
+  :number: 659
+  :lot: 124
+- :street: Deer Valley
+  :number: 675
+  :lot: 123
+- :street: Deer Valley
+  :number: 680
+  :lot: 188
+- :street: Deer Valley
+  :number: 691
+  :lot: 122
+- :street: Deer Valley
+  :number: 723
+  :lot: 116
+- :street: Deer Valley
+  :number: 735
+  :lot: 115
+- :street: Deer Valley
+  :number: 736
+  :lot: 163
+- :street: Deer Valley
+  :number: 747
+  :lot: 114
+- :street: Deer Valley
+  :number: 752
+  :lot: 162
+- :street: Deer Valley
+  :number: 759
+  :lot: 113
+- :street: Deer Valley
+  :number: 760
+  :lot: 161
+- :street: Deer Valley
+  :number: 764
+  :lot: 160
+- :street: Deer Valley
+  :number: 771
+  :lot: 112
+- :street: Deer Valley
+  :number: 778
+  :lot: 159
+- :street: Deer Valley
+  :number: 783
+  :lot: 111
+- :street: Deer Valley
+  :number: 795
+  :lot: 110
+- :street: Deer Valley
+  :number: 804
+  :lot: 158
+- :street: Deer Valley
+  :number: 807
+  :lot: 109
+- :street: Deer Valley
+  :number: 818
+  :lot: 157
+- :street: Deer Valley
+  :number: 819
+  :lot: 108
+- :street: Deer Valley
+  :number: 826
+  :lot: 156
+- :street: Deer Valley
+  :number: 827
+  :lot: 107
+- :street: Deer Valley
+  :number: 839
+  :lot: 106
+- :street: Deer Valley
+  :number: 844
+  :lot: 155
+- :street: Deer Valley
+  :number: 866
+  :lot: 154
+- :street: Deer Valley
+  :number: 871
+  :lot: 103
+- :street: Deer Valley
+  :number: 874
+  :lot: 153
+- :street: Deer Valley
+  :number: 879
+  :lot: 101
+- :street: Deer Valley
+  :number: 882
+  :lot: 152
+- :street: Deer Valley
+  :number: 890
+  :lot: 151
+- :street: Deer Valley
+  :number: 891
+  :lot: 100
+- :street: Deer Valley
+  :number: 896
+  :lot: 150
+- :street: Dry Canyon
+  :number: 6208
+  :lot: 56
+- :street: Dry Canyon
+  :number: 6213
+  :lot: 41
+- :street: Dry Canyon
+  :number: 6220
+  :lot: 55
+- :street: Dry Canyon
+  :number: 6225
+  :lot: 42
+- :street: Dry Canyon
+  :number: 6232
+  :lot: 53
+- :street: Dry Canyon
+  :number: 6233
+  :lot: 43
+- :street: Dry Canyon
+  :number: 6245
+  :lot: 44
+- :street: Dry Canyon
+  :number: 6256
+  :lot: 52
+- :street: Dry Canyon
+  :number: 6257
+  :lot: 45
+- :street: Dry Canyon
+  :number: 6268
+  :lot: 51
+- :street: Dry Canyon
+  :number: 6269
+  :lot: 46
+- :street: Dry Canyon
+  :number: 6280
+  :lot: 50
+- :street: Dry Canyon
+  :number: 6281
+  :lot: 47
+- :street: Dry Canyon
+  :number: 6294
+  :lot: 49
+- :street: Dry Canyon
+  :number: 6295
+  :lot: 48
+- :street: Heartfield Court
+  :number: 421
+  :lot: 5
+- :street: Heartfield Court
+  :number: 424
+  :lot: 6
+- :street: Heartfield Court
+  :number: 437
+  :lot: 4
+- :street: Heartfield Court
+  :number: 442
+  :lot: 7
+- :street: Heartfield Court
+  :number: 455
+  :lot: 3
+- :street: Heartfield Court
+  :number: 462
+  :lot: 8
+- :street: Heartfield Court
+  :number: 475
+  :lot: 2
+- :street: Heartfield Court
+  :number: 480
+  :lot: 9
+- :street: Pitts Road
+  :number: 630
+  :lot:
+- :street: Sunset Canyon
+  :number: 5807
+  :lot: 119
+- :street: Sunset Canyon
+  :number: 5808
+  :lot: 120
+- :street: Sunset Canyon
+  :number: 5823
+  :lot: 118
+- :street: Sunset Canyon
+  :number: 5824
+  :lot: 121
+- :street: Sunset Canyon
+  :number: 5836
+  :lot: 122
+- :street: Sunset Canyon
+  :number: 5841
+  :lot: 117
+- :street: Sunset Canyon
+  :number: 5855
+  :lot: 164
+- :street: Sunset Canyon
+  :number: 5856
+  :lot: 188
+- :street: Sunset Canyon
+  :number: 5863
+  :lot: 165
+- :street: Sunset Canyon
+  :number: 5864
+  :lot: 187
+- :street: Sunset Canyon
+  :number: 5870
+  :lot: 186
+- :street: Sunset Canyon
+  :number: 5871
+  :lot: 166
+- :street: Sunset Canyon
+  :number: 5876
+  :lot: 185
+- :street: Sunset Canyon
+  :number: 5879
+  :lot: 167
+- :street: Sunset Canyon
+  :number: 5882
+  :lot: 184
+- :street: Sunset Canyon
+  :number: 5887
+  :lot: 168
+- :street: Sunset Canyon
+  :number: 5896
+  :lot: 183
+- :street: Sunset Canyon
+  :number: 5918
+  :lot: 182
+- :street: Sunset Canyon
+  :number: 5919
+  :lot: 173
+- :street: Sunset Canyon
+  :number: 5940
+  :lot: 181
+- :street: Sunset Canyon
+  :number: 5955
+  :lot: 175
+- :street: Sunset Canyon
+  :number: 5958
+  :lot: 180
+- :street: Sunset Canyon
+  :number: 5973
+  :lot: 176
+- :street: Sunset Canyon
+  :number: 5974
+  :lot: 179
+- :street: Sunset Canyon
+  :number: 5991
+  :lot: 177

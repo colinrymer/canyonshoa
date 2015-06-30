@@ -4,6 +4,10 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
     :recoverable, :rememberable, :trackable, :validatable
 
+  belongs_to :lot, inverse_of: :users
+
+  validates_presence_of :first_name, :last_name, :lot_id
+
   def active_for_authentication?
     super && approved?
   end
@@ -22,6 +26,10 @@ class User < ActiveRecord::Base
 
   def full_name
     "#{first_name} #{last_name}"
+  end
+
+  def address
+    lot.mailing_address
   end
 
 end

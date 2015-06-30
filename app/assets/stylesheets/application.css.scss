@@ -11,7 +11,33 @@
 @import "refills/navigation";
 @import "refills/comment";
 @import "refills/type-system-slab";
+@import "select2";
 
 div.container {
   @include outer-container;
 }
+
+.inner-container {
+  @include span-columns(12);
+}
+
+#user_lot_id {
+  width: 100%;
+}
+
+#new_user .form-actions {
+  padding-top: 1em;
+}
+
+.field_with_hint {
+  input {
+    margin-bottom: 0;
+  }
+
+  .hint {
+    font-size: 0.85em;
+  }
+
+  margin-bottom: 0.75em;
+}
+

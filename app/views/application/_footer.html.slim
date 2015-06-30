@@ -1,37 +1,10 @@
-footer.footer[role="contentinfo"]
-  .footer-logo
-  .footer-links
+footer.footer-2[role="contentinfo"]
+  ul
+    li = link_to "About Us", "/about"
+    li = link_to "Contact Us", "/contact"
+  .footer-secondary-links
     ul
       li
-        h3
-          | Content
+        = link_to "Terms and Conditions", '/terms'
       li
-        a[href="javascript:void(0)"]
-          | About
-      li
-        a[href="javascript:void(0)"]
-          | Contact
-    ul
-      li
-        h3
-          | Follow Us
-      li
-        a[href="javascript:void(0)"]
-          | Facebook
-      li
-        a[href="javascript:void(0)"]
-          | Twitter
-      li
-        a[href="javascript:void(0)"]
-          | YouTube
-    ul
-      li
-        h3
-          | Legal
-      li
-        = link_to "Terms and Conditions", page_path('terms')
-      li
-        = link_to "Privacy Policy", page_path('privacy')
-  hr
-  p
-    | The Canyons at Falling Water. &copy; 2015
+        = link_to "Privacy Policy", '/privacy'

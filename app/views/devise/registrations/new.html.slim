@@ -1,14 +1,14 @@
-h2
-  | Sign up
+h2 Sign up
 = simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
-  = f.error_notification
   .form-inputs
     = f.input :email, required: true, autofocus: true
     = f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @validatable)
     = f.input :password_confirmation, required: true
     = f.input :first_name, required: true
     = f.input :last_name, required: true
-    = f.input :address, required: true
+    = f.association :lot, collection: Street.all, as: :grouped_select, group_method: :lots, group_label_method: :name, label_method: :mailing_address, value_method: :id, required: true, label: "Address"
   .form-actions
     = f.button :submit, "Sign up"
-= render "devise/shared/links"
+p
+  | or&nbsp;
+  = render "devise/shared/links"

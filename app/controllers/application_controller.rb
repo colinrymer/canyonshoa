@@ -5,6 +5,7 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.for(:account_update) do |u|
       u.permit(:password, :password_confirmation, :current_password)
     end
+    devise_parameter_sanitizer.for(:sign_up) << :lot_id << :first_name << :last_name
   end
 
   def forem_user
