@@ -28,5 +28,6 @@ module Canyons
       password:             ENV['GMAIL_PASSWORD'],
       authentication:       'plain',
       enable_starttls_auto: true  }
+    config.action_mailer.default_url_options = { host: 'canyonshoa.com' }
   end
 end
