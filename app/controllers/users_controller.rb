@@ -7,7 +7,7 @@ class UsersController < ApplicationController
       @users = Array(User.where(approved: nil))
     else
       @waiting_approval = false
-      @users = User.all
+      @users = User.approved
     end
   end
 

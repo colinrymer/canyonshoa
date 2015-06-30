@@ -4,6 +4,8 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
     :recoverable, :rememberable, :trackable, :validatable
 
+  scope :approved, ->() { where(approved: true) }
+
   belongs_to :lot, inverse_of: :users
 
   validates_presence_of :first_name, :last_name, :lot_id
