@@ -1,0 +1,7 @@
+.git
+.envrc
+docker-compose.yml
+.gitignore
+README.rdoc
+latest.dump
+db/prod_dump.sql

@@ -2,14 +2,4 @@
 
 # this script is executed once the web container started
 echo "running in RACK_ENV=$RACK_ENV"
-echo "assets"
-if [ "$RACK_ENV" = "production" ] || [ "$RAILS_ENV" = "production" ]; then
-    rake assets:precompile
-    echo "precompiled"
-else
-    rm -rf public/assets
-    echo "not precompiled"
-fi
-
-echo "run puma"
 bundle exec puma -e $RACK_ENV -C config/puma.rb

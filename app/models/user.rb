@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
     :recoverable, :rememberable, :trackable, :validatable
 
-  scope :approved, ->() { where(approved: true) }
+  scope :approved, ->() { where(approved: true).order(:last_name, :first_name) }
   scope :needing_approval, ->() { where(approved: false) }
 
   belongs_to :lot, inverse_of: :users

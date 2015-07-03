@@ -40,7 +40,7 @@ class UsersController < ApplicationController
     else
       flash[:error] = "You are unauthorized to perform that action."
     end
-    redirect_to users_path
+    redirect_to members_path
   end
 
   private

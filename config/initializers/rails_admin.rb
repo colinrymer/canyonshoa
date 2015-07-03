@@ -16,6 +16,12 @@ RailsAdmin.config do |config|
 
   ### More at https://github.com/sferik/rails_admin/wiki/Base-configuration
 
+  config.model 'User' do
+    list do
+      exclude_fields :password, :password_confirmation
+    end
+  end
+
   config.actions do
     dashboard                     # mandatory
     index                         # mandatory

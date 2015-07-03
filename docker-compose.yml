@@ -1,0 +1,33 @@
+db:
+  image: mysql
+  ports:
+    - "3306"
+  environment:
+    MYSQL_ROOT_PASSWORD: password
+
+web: &base
+  build: .
+  volumes:
+    - .:/app
+  ports:
+    - "80:3000"
+  links:
+    - db
+  environment:
+    AWS_BUCKET:
+    AWS_ACCESS_KEY_ID:
+    AWS_SECRET_ACCESS_KEY:
+    DEVISE_SECRET_KEY: 28f6306daba5ffaseffefef888282812391823098239
+    SECRET_KEY_BASE: 2d4dd02b3344def7687fd461bd351dddbf51cde57a3e51de7d5ef0fb749d0ec3fd7889b8268d73635d1b62fb91e1674698d8f99305acaaedca154087d0ae9155
+    DATABASE_HOST: db
+    DATABASE_USER: root
+    DATABASE_PASSWORD: password
+    GMAIL_USER_NAME:
+    GMAIL_PASSWORD:
+    SUPER_ADMIN_EMAIL:
+    SUPER_ADMIN_PASSWORD:
+    ADMIN_EMAIL:
+    ADMIN_PASSWORD:
+    ADMIN_FIRST_NAME:
+    ADMIN_LAST_NAME:
+
