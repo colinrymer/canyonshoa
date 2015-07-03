@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
     :recoverable, :rememberable, :trackable, :validatable
 
   scope :approved, ->() { where(approved: true) }
+  scope :needing_approval, ->() { where(approved: false) }
 
   belongs_to :lot, inverse_of: :users
 

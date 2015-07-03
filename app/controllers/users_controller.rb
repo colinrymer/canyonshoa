@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   def index
     if params[:approved] == "false"
       @waiting_approval = true
-      @users = Array(User.where(approved: nil))
+      @users = User.needing_approval
     else
       @waiting_approval = false
       @users = User.approved
