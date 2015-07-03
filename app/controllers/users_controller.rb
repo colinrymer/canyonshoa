@@ -30,17 +30,17 @@ class UsersController < ApplicationController
 
   def approve
     if current_user.admin?
-      if User.find_by_id(params[:id]).update(approved: true)
+      @user = User.find_by_id(params[:id])
+      if @user.update(approved: true)
+        UserMailer.welcome_email(@user).deliver
         flash[:success] = "User was approved."
-        redirect_to users_path
       else
         flash[:error] = "User was unable to be approved."
-        redirect_to users_path
       end
     else
       flash[:error] = "You are unauthorized to perform that action."
-      redirect_to users_path
     end
+    redirect_to users_path
   end
 
   private
