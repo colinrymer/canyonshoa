@@ -34,13 +34,15 @@ class UsersController < ApplicationController
       if @user.update(approved: true)
         UserMailer.welcome_email(@user).deliver
         flash[:success] = "User was approved."
+        redirect_to members_path, approved: false
       else
         flash[:error] = "User was unable to be approved."
+        redirect_to members_path
       end
     else
       flash[:error] = "You are unauthorized to perform that action."
+      redirect_to members_path
     end
-    redirect_to members_path
   end
 
   private

@@ -1,13 +1,14 @@
+%ol.post-list
 - @posts.each do |post|
-
-  %h1= link_to post.title, comfy_blog_post_path(@cms_site.path, @blog.path, post.slug)
-  .author
-    = post.author
-  .date
-    = post.published_at.to_s(:db)
-  .content
-    = post.excerpt.html_safe
-  - unless post == @posts.last
-    %hr
+  %li.post-excerpt
+    %a(href="#{comfy_blog_post_path(@cms_site.path, @blog.path, post.slug)}")
+      %h2.post-excerpt-title=post.title
+    .post-excerpt-content
+      = post.excerpt.html_safe
+    .post-excerpt-metadata
+      .post-excerpt-author
+        = post.author
+      .post-excerpt-date
+        = post.published_at.strftime("%B %d, %Y")
 
 = comfy_paginate @posts
