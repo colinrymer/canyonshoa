@@ -6,7 +6,7 @@ h2 Sign up
     = f.input :password_confirmation, required: true
     = f.input :first_name, required: true
     = f.input :last_name, required: true
-    = f.association :lot, collection: Street.all, as: :grouped_select, group_method: :lots, group_label_method: :name, label_method: :mailing_address, value_method: :id, required: true, label: "Address"
+    = f.association :lot, collection: Street.sorted, as: :grouped_select, group_method: :lots, group_label_method: :name, label_method: :mailing_address, value_method: :id, required: true, label: "Address"
   .form-actions
     = f.button :submit, "Sign up"
 p
