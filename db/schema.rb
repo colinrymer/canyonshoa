@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150630215722) do
+ActiveRecord::Schema.define(version: 20150706015800) do
 
   create_table "admins", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -242,7 +242,7 @@ ActiveRecord::Schema.define(version: 20150630215722) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "reply_to_id"
-    t.string   "state",       default: "pending_review"
+    t.string   "state",       default: "approved"
     t.boolean  "notified",    default: false
   end
 
@@ -262,11 +262,11 @@ ActiveRecord::Schema.define(version: 20150630215722) do
     t.string   "subject"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "locked",       default: false,            null: false
+    t.boolean  "locked",       default: false,      null: false
     t.boolean  "pinned",       default: false
     t.boolean  "hidden",       default: false
     t.datetime "last_post_at"
-    t.string   "state",        default: "pending_review"
+    t.string   "state",        default: "approved"
     t.integer  "views_count",  default: 0
     t.string   "slug"
   end

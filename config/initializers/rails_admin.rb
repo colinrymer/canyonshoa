@@ -16,8 +16,8 @@ RailsAdmin.config do |config|
 
   ### More at https://github.com/sferik/rails_admin/wiki/Base-configuration
 
-  config.model 'User' do
-    list do
+  config.model User do
+    update do
       exclude_fields :password, :password_confirmation
     end
   end
