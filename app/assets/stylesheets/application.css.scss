@@ -41,3 +41,14 @@ div.container {
   margin-bottom: 0.75em;
 }
 
+li.post-excerpt {
+  list-style: none;
+  h2.post-excerpt-title {
+    margin-bottom: 0.25em;
+  }
+
+  .post-excerpt-metadata div {
+    display: inline-block;
+  }
+}
+
